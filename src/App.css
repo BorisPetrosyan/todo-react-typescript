@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: Bahnschrift, serif
+}
+
+
+.container {
+  padding-top: 50px;
+  background: -webkit-gradient(linear,left bottom,right top,from(white),color-stop(100%,#99a875));
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-family: Bahnschrift, serif;
+  width: 100%;
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  color:  rgba(11, 44, 56,0.6)
+}
+
+.section-container {
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius:10px 10px 0 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #fffcf7;
+  height: 50px;
+}
+.nav-container {
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 0 0 10px 10px;
+  padding: 0;
+  list-style-type: none;
+  background-color: #fffcf7;
+  height: 35px;
+  border-top: 1px solid lightgrey;
+}
+.nav-text {
+  transition: 500ms;
+  margin: 7px;
+  font-family: Bahnschrift, serif;
+  opacity: 0.7;
+  float: right;
+  font-size: 13px;
+  border: 1px solid yellowgreen;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nav-text:hover{
+  opacity: 0.8;
+  background: rgba(154, 205, 50, 0.4);
+}
+.add-todo {
+  color: rgb(11, 44, 56);
+  transition: 500ms;
+  margin: 7px;
+  font-family: Bahnschrift, serif;
+  opacity: 0.9;
+  float: right;
+  font-size: 13px;
+  border: 1px solid rgba(154, 205, 50, 0.4);
+  background-color: rgba(154, 205, 50, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-todo:hover {
+  transition: 500ms;
+  opacity: 1;
+  background-color: rgba(154, 205, 50, 0.6);
+}
+
+.active {
+  opacity: 1;
+  border: 1px solid cornflowerblue;
+  transition: 500ms;
+  background: rgba(100, 149, 237, 0.55);
+}
+
+.crop {
+  background-image: url("/public/crop.png");
+}
+
+.input-style {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  height: 30px;
+  margin: 7px 11px;
+  width: 150px;
+  font-size: 12px;
+  padding: 2px 2px 0 8px;
+}
+.add-text {
+  padding: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 125px;
+  height: 1.2em;
+  white-space: nowrap;
+}
+
+.description-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 250px;
+  height: 1.2em;
+  white-space: nowrap;
+  border-left: 1px solid lightgrey;
+}
+
+.border-for {
+  width: 100%;
+  background-color: rgb(255, 252, 247);
+  border-top: 1px solid lightgrey;
+  max-height: 300px;
+  overflow: auto;
+}
+.label-input {
+  font-size: 13px;
+  padding: 10px 0 0 12px;
+}
+
+.edit-modal {
+  background: -webkit-gradient(linear,left top,right top,from(#e6e6e6),color-stop(100%,#99A880));
+  position: absolute;
+  height: 195px;
+  width: 190px;
+  z-index: 1;
+  margin: 20px 110px;
+  border-radius: 16px;
+  box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
+}
+
+.backdrop {
+  display: none;
+  border-radius: 10px 10px 0 0;
+  z-index: 1;
+  background: rgba(	91, 103, 65,0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.d-show {
+  display: block;
+}
+.d-none {
+  display: none!important;
+}
+
+.d-flex-between {
+  display:flex;
+  justify-content:space-between;
+}
+
+.deleteBtn {
+   transition: 1s;
+  height: 25px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  background-color: #f44336;
+  opacity: 0.8;
+}
+
+.edit-cancel {
+  background-color: rgba(244,67,54,0.66);
+  color: white;
+  transition: 500ms;
+  font-family: Bahnschrift, serif;
+  border: 1px solid rgba(244,67,54,0.66);
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.9;
+  float: right;
+  height: 20px;
+  font-size: 10px;
+  margin: 15px 5px;
+}
+.edit-accept {
+  background-color: rgba(100, 149, 237, 0.66);
+  color: white;
+  transition: 500ms;
+  font-family: Bahnschrift, serif;
+  border: 1px solid rgba(100, 149, 237, 0.77);
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 1;
+  float: right;
+  height: 20px;
+  font-size: 10px;
+  margin: 15px 5px;
+}
+.edit-accept:hover {
+  background-color: rgba(100, 149, 237, 1);
+  transition: 500ms;
+}
+.edit-cancel:hover {
+  background-color: rgba(244,67,54,1);
+  transition: 500ms;
+}
+.editBtn {
+   transition: 1s;
+  margin-right: 10px;
+  height: 25px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  background-color: seagreen;
+  opacity: 0.8;
+}
+
+.deleteBtn:hover,
+.deleteBtn:focus,
+.editBtn:hover,
+.editBtn:focus  {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.deleteBtn:hover,
+.editBtn:hover {
+  transition: 1s;
+}

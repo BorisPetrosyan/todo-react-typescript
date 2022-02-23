@@ -1,0 +1,8 @@
+
+export enum ActionType {
+    ADD_TASK = "ADD_TASK",
+    CHECK_TASK = "CHECK_TASK",
+    REMOVE_TASK = "REMOVE_TASK",
+    TASK_UPDATE = "TASK_UPDATE",
+    CHANGE_POSITION ="CHANGE_POSITION"
+}
